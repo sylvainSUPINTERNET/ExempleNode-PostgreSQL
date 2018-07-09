@@ -29,8 +29,7 @@ app.get('/testQuery', function (req, res) {
 
 app.get('/department/:id', function(req,res){
    const deptId = req.params.id;
-
-
+   
    //override query method to be async query
    async function perfomQueryAsync(){
        try {
